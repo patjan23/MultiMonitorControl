@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<Nullable>enable</Nullable>
+		<ApplicationIcon>Resources\monitor.ico</ApplicationIcon>
+		<AssemblyTitle>Multi-Monitor Control Panel</AssemblyTitle>
+		<AssemblyDescription>Professional desktop application for controlling multiple monitor settings including brightness, contrast, and color balance.</AssemblyDescription>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>		
+		<Company>Multi-Monitor Control</Company>
+		<Product>Multi-Monitor Control Panel</Product>
+		<StartupObject>MultiMonitorControl.App</StartupObject>
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>false</SelfContained>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<PublishReadyToRun>true</PublishReadyToRun>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<Optimize>true</Optimize>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Resources\monitor.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Resources\monitor.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Management" Version="7.0.2" />
+	</ItemGroup>
+
+</Project>
