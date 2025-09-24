@@ -6,15 +6,11 @@ A professional C# WPF desktop application for controlling multiple monitor param
 
 
 
-!\[Monitor Control Panel]
+<img width="962" height="749" alt="image" src="https://github.com/user-attachments/assets/a915b93f-70ed-429b-8ddb-ce288fd51489" />
 
 
 
-A professional C# WPF desktop application for controlling multiple monitor parameters including brightness, contrast, and color balance using Windows Display Data Channel (DDC/CI) API.
 
-
-
-!\[Monitor Control Panel]
 
 
 
